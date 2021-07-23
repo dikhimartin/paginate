@@ -1,11 +1,11 @@
 # paginate - Gorm Pagination
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/dikhimartin/paginate.svg)](https://pkg.go.dev/github.com/dikhimartin/paginate)
+<!-- [![Go Reference](https://pkg.go.dev/badge/github.com/dikhimartin/paginate.svg)](https://pkg.go.dev/github.com/dikhimartin/paginate)
 [![CircleCI](https://circleci.com/gh/dikhimartin/paginate.svg?style=svg)](https://circleci.com/gh/dikhimartin/paginate)
 [![Github Actions](https://github.com/dikhimartin/paginate/workflows/Go/badge.svg)](https://github.com/dikhimartin/paginate/actions)
 [![Build Status](https://travis-ci.com/dikhimartin/paginate.svg?branch=master)](https://travis-ci.com/dikhimartin/paginate)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dikhimartin/paginate)](https://goreportcard.com/report/github.com/dikhimartin/paginate)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/dikhimartin/paginate)](https://github.com/dikhimartin/paginate/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/dikhimartin/paginate)](https://github.com/dikhimartin/paginate/releases) -->
 
 Simple way to paginate [Gorm](https://github.com/go-gorm/gorm) result. **paginate** is compatible with [net/http](https://golang.org/pkg/net/http/) and [fasthttp](https://github.com/valyala/fasthttp). This library also supports many frameworks are based on net/http or fasthttp.
 
