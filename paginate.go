@@ -14,7 +14,7 @@ import (
 	"strings"
 
 	"github.com/iancoleman/strcase"
-	"github.com/morkid/gocache"
+	"github.com/dikhimartin/gocache"
 	"gorm.io/gorm"
 
 	"github.com/valyala/fasthttp"

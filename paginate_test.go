@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/morkid/gocache"
+	"github.com/dikhimartin/gocache"
 	"github.com/valyala/fasthttp"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

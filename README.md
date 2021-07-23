@@ -1,11 +1,11 @@
 # paginate - Gorm Pagination
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/morkid/paginate.svg)](https://pkg.go.dev/github.com/morkid/paginate)
-[![CircleCI](https://circleci.com/gh/morkid/paginate.svg?style=svg)](https://circleci.com/gh/morkid/paginate)
-[![Github Actions](https://github.com/morkid/paginate/workflows/Go/badge.svg)](https://github.com/morkid/paginate/actions)
-[![Build Status](https://travis-ci.com/morkid/paginate.svg?branch=master)](https://travis-ci.com/morkid/paginate)
-[![Go Report Card](https://goreportcard.com/badge/github.com/morkid/paginate)](https://goreportcard.com/report/github.com/morkid/paginate)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/morkid/paginate)](https://github.com/morkid/paginate/releases)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dikhimartin/paginate.svg)](https://pkg.go.dev/github.com/dikhimartin/paginate)
+[![CircleCI](https://circleci.com/gh/dikhimartin/paginate.svg?style=svg)](https://circleci.com/gh/dikhimartin/paginate)
+[![Github Actions](https://github.com/dikhimartin/paginate/workflows/Go/badge.svg)](https://github.com/dikhimartin/paginate/actions)
+[![Build Status](https://travis-ci.com/dikhimartin/paginate.svg?branch=master)](https://travis-ci.com/dikhimartin/paginate)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dikhimartin/paginate)](https://goreportcard.com/report/github.com/dikhimartin/paginate)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/dikhimartin/paginate)](https://github.com/dikhimartin/paginate/releases)
 
 Simple way to paginate [Gorm](https://github.com/go-gorm/gorm) result. **paginate** is compatible with [net/http](https://golang.org/pkg/net/http/) and [fasthttp](https://github.com/valyala/fasthttp). This library also supports many frameworks are based on net/http or fasthttp.
 
@@ -166,7 +166,7 @@ example paging, sorting and filtering:
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -192,7 +192,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -215,7 +215,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -241,7 +241,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -264,7 +264,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -287,7 +287,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -310,7 +310,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -332,7 +332,7 @@ func main() {
 package main
 
 import (
-    "github.com/morkid/paginate"
+    "github.com/dikhimartin/paginate"
     ...
 )
 
@@ -634,13 +634,13 @@ pg := paginate.New(config)
 ```
 
 ## Speed up response with cache
-You can speed up results without looking database directly with cache adapter. See more about [cache adapter](https://github.com/morkid/gocache).
+You can speed up results without looking database directly with cache adapter. See more about [cache adapter](https://github.com/dikhimartin/gocache).
 
 ### In memory cache
 in memory cache is not recommended for production environment:
 ```go
 import (
-    "github.com/morkid/gocache"
+    "github.com/dikhimartin/gocache"
     ...
 )
 
@@ -665,7 +665,7 @@ func main() {
 Disk cache will create a file for every single request. You can use disk cache if you don't care about inode.
 ```go
 import (
-    "github.com/morkid/gocache"
+    "github.com/dikhimartin/gocache"
     ...
 )
 
@@ -690,7 +690,7 @@ func main() {
 Redis cache require [redis client](https://github.com/go-redis/redis) for golang.
 ```go
 import (
-    cache "github.com/morkid/gocache-redis/v8"
+    cache "github.com/dikhimartin/gocache-redis/v8"
     "github.com/go-redis/redis/v8"
     ...
 )
@@ -717,13 +717,13 @@ func main() {
     ...
 }
 ```
-> if your code already adopts another redis client, you can implement the [redis adapter](https://github.com/morkid/gocache-redis) according to its version. See more about [redis adapter](https://github.com/morkid/gocache-redis).
+> if your code already adopts another redis client, you can implement the [redis adapter](https://github.com/dikhimartin/gocache-redis) according to its version. See more about [redis adapter](https://github.com/dikhimartin/gocache-redis).
 
 ### Elasticsearch cache
 Elasticsearch cache require official [elasticsearch client](https://github.com/elastic/go-elasticsearch) for golang.
 ```go
 import (
-    cache "github.com/morkid/gocache-elasticsearch/v7"
+    cache "github.com/dikhimartin/gocache-elasticsearch/v7"
     "github.com/elastic/go-elasticsearch/v7"
     ...
 )
@@ -755,10 +755,10 @@ func main() {
     ...
 }
 ```
-> if your code already adopts another elasticsearch client, you can implement the [elasticsearch adapter](https://github.com/morkid/gocache-elasticsearch) according to its version. See more about [elasticsearch adapter](https://github.com/morkid/gocache-elasticsearch).
+> if your code already adopts another elasticsearch client, you can implement the [elasticsearch adapter](https://github.com/dikhimartin/gocache-elasticsearch) according to its version. See more about [elasticsearch adapter](https://github.com/dikhimartin/gocache-elasticsearch).
 
 ### Custom cache
-Create your own cache adapter by implementing [gocache AdapterInterface](https://github.com/morkid/gocache/blob/master/gocache.go). See more about [cache adapter](https://github.com/morkid/gocache).
+Create your own cache adapter by implementing [gocache AdapterInterface](https://github.com/dikhimartin/gocache/blob/master/gocache.go). See more about [cache adapter](https://github.com/dikhimartin/gocache).
 ```go
 // AdapterInterface interface
 type AdapterInterface interface {
@@ -874,4 +874,4 @@ type User struct {
 
 ## License
 
-Published under the [MIT License](https://github.com/morkid/paginate/blob/master/LICENSE).
+Published under the [MIT License](https://github.com/dikhimartin/paginate/blob/master/LICENSE).
