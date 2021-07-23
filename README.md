@@ -42,7 +42,7 @@ Simple way to paginate [Gorm](https://github.com/go-gorm/gorm) result. **paginat
 ## Installation
 
 ```bash
-go get -u github.com/morkid/paginate
+go get -u github.com/dikhimartin/paginate
 ```
 
 ## Configuration
